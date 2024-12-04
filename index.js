@@ -13,10 +13,6 @@ app.use(express.static('uploads'));
 app.use(express.json()); 
 app.use('/api',musicRouter);
 
-app.get('/', (req, res)=>{
- res.send('This is yohannes manaye')
-})
-
 
 const port = process.env.PORT || 7000;
 
